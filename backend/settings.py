@@ -90,13 +90,13 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
 
-        'NAME': 'app_integrations',
+        'NAME': 'applications_db_z6y0',
 
-        'USER': 'postgres',
+        'USER': 'applications_db_z6y0_user',
 
-        'PASSWORD': 'postgres',
+        'PASSWORD': 'Rnf4JLiTA8Cl6PxMMJl6TCyc8GmO0wIF',
 
-        'HOST': 'localhost',
+        'HOST': 'dpg-ctldf00gph6c739kbv10-a',
 
         'PORT': '5432',
     }
