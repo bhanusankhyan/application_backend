@@ -39,6 +39,8 @@ CSRF_COOKIE_SECURE = True
 
 CORS_ALLOW_CREDENTIALS = True
 
+CSRF_COOKIE_HTTPONLY = False
+
 # Application definition
 
 INSTALLED_APPS = [
