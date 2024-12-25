@@ -33,7 +33,9 @@ CORS_ORIGIN_ALLOW_ALL = True
 
 CSRF_TRUSTED_ORIGINS = ['https://application-sooty.vercel.app', 'http://localhost:5000']
 
-CSRF_COOKIE_SAMESITE = None
+CSRF_COOKIE_SAMESITE = 'None'
+
+CSRF_COOKIE_SECURE = True
 
 CORS_ALLOW_CREDENTIALS = True
 
@@ -89,8 +91,8 @@ WSGI_APPLICATION = 'backend.wsgi.application'
 DATABASES = {
     'default': dj_database_url.config(
         # Replace this value with your local database's connection string.
-        # default='postgresql://applications_db_z6y0_user:Rnf4JLiTA8Cl6PxMMJl6TCyc8GmO0wIF@dpg-ctldf00gph6c739kbv10-a.oregon-postgres.render.com/applications_db_z6y0',
-        default='postgresql://applications_db_z6y0_user:Rnf4JLiTA8Cl6PxMMJl6TCyc8GmO0wIF@dpg-ctldf00gph6c739kbv10-a/applications_db_z6y0',
+        default='postgresql://applications_db_z6y0_user:Rnf4JLiTA8Cl6PxMMJl6TCyc8GmO0wIF@dpg-ctldf00gph6c739kbv10-a.oregon-postgres.render.com/applications_db_z6y0',
+        # default='postgresql://applications_db_z6y0_user:Rnf4JLiTA8Cl6PxMMJl6TCyc8GmO0wIF@dpg-ctldf00gph6c739kbv10-a/applications_db_z6y0',
         # default = 'postgresql://postgres:postgres@localhost:5432/app_integrations',
         conn_max_age=600
     )
