@@ -33,9 +33,9 @@ CORS_ORIGIN_ALLOW_ALL = True
 
 # CSRF_TRUSTED_ORIGINS = ['https://application-sooty.vercel.app', 'http://localhost:5000']
 
-CSRF_COOKIE_SAMESITE = 'None'
-
-CSRF_COOKIE_SECURE = True
+# CSRF_COOKIE_SAMESITE = 'None'
+#
+# CSRF_COOKIE_SECURE = True
 
 CORS_ALLOW_CREDENTIALS = True
 
