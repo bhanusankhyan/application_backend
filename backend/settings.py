@@ -29,15 +29,18 @@ DEBUG = False
 
 ALLOWED_HOSTS = ['*']
 
-CORS_ORIGIN_ALLOW_ALL = True
+CORS_ALLOW_ALL_ORIGINS = True
 
-CSRF_TRUSTED_ORIGINS = ['https://application-sooty.vercel.app', 'http://localhost:5000']
+CORS_ALLOW_CREDENTIALS = True
+# CORS_ALLOWED_ORIGINS = [
+#     'https://application-sooty.vercel.app/', 'http://localhost:5000'
+# ]
+
+CSRF_TRUSTED_ORIGINS = ['https://application-sooty.vercel.app/', 'http://localhost:5000']
 
 CSRF_COOKIE_SAMESITE = 'None'
 
 CSRF_COOKIE_SECURE = True
-
-CORS_ALLOW_CREDENTIALS = True
 
 CSRF_COOKIE_HTTPONLY = False
 
